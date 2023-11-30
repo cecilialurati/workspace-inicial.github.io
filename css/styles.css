@@ -105,7 +105,7 @@ nav a {
 }
 
 footer {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
@@ -333,8 +333,32 @@ a.custom-card:hover {
   margin: 0 auto;
   text-align: center;
 }
+.perfil-boton {
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;  
+}
 
-.perfil-container {
+.perfil-boton:hover{
+  background-color: hsl(39, 100%, 45%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6d265", endColorstr="#fda284");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f6d265), to(#fda284));
+  background-image: -moz-linear-gradient(top, #f6d265, #fda284);
+  background-image: -ms-linear-gradient(top, #f6d265, #fda284);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6d265), color-stop(100%, #fda284));
+  background-image: -webkit-linear-gradient(top, #f6d265, #fda284);
+  background-image: -o-linear-gradient(top, #f6d265, #fda284);
+  background-image: linear-gradient(#f6d265, #fda284);
+  border-color: #fda284 #fda284 hsl(39, 100%, 38%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.46);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*Perfil usuario*/
+
+/* .perfil-container {
   display: inline-flexbox;
   max-width: 90%;
   margin: 35px;
@@ -399,12 +423,13 @@ select {
   padding: 5px;
 }
 
-/* */
-
 .imgPerfil {
   height: 30px;
   width: 35px;
-}
+} */
+
+
+/* */
 
 
 /* */
@@ -602,18 +627,32 @@ select {
 }
 
 .mode {
-  height: 60px;
-  width: 60px;  
-  margin: 0 auto; 
-  display: block; 
+  height: auto;
+  width: 3em;
+  margin: 0 auto;
+  display: block;
+  margin-left: 17px; 
+}
+
+.model {
+  height: auto;
+  width: 4em;
+  margin: 0 auto;
+  display: block;
+  margin-left: 17px; 
 }
 
 body.modo-oscuro {
-  background-color: #0D1117;
+  background-color:hsl(240, 16%, 18%);
   color: white;
 }
 
-
+.modo-oscuro h2 {
+  opacity: 0.9;
+}
+.modo-oscuro label{
+  opacity:0.8;
+}
 .modo-oscuro .redireciones a {
   color: #f09100; 
 }
@@ -630,6 +669,93 @@ body.modo-oscuro {
 .modo-oscuro #img-oscuro {
   display: block; 
 }
+.modo-oscuro footer {
+  background-color: hsl(240, 16%, 20%);
+  color: white;
+}
+.modo-oscuro main div {
+  background-color: hsl(240, 16%, 18%);
+  color:white;
+}
+.modo-oscuro main {
+  background-color: hsl(240, 16%, 18%);
+}
+.modo-oscuro .custom-card:hover {
+  border: hsl(240, 16%, 10%) solid 2px;
+  scale:1.05;
+}
+.modo-oscuro .btn {
+  background-color:hsl(240, 16%, 14%);
+  color:white;
+  opacity: 0.8;
+}
+.modo-oscuro .btn:hover {
+  scale:1.1;
+  background-color: hsl(240, 16%, 10%);
+
+}
+.modo-oscuro p {
+  opacity: 60%;
+}
+.modo-oscuro .list-group-item-action:hover {
+  background-color: hsl(240, 16%,17%);
+  scale:1.009;
+}
+
+.modo-oscuro input {
+  background-color: #212529;
+  color:rgb(255, 255, 255);
+  opacity: 85%;
+}
+.modo-oscuro input:focus{
+  background-color: hsl(240, 16%,12%);
+  color:white;
+}
+.modo-oscuro .img-thumbnail {
+  background-color:  hsl(240, 16%,17%);
+  border-color:  hsl(240, 16%,16%);
+ 
+}
+.modo-oscuro thead {
+  color: white;
+  opacity: 0.9;
+}
+.modo-oscuro tbody {
+  color: white;
+  opacity: 0.7;
+}
+.modo-oscuro #tablacart {
+  background-color:  hsl(240, 16%,16%);
+}
+.modo-oscuro .form-row,.modo-oscuro .form-row div  {
+  background-color: hsl(240, 16%,16%);
+}
+.modo-oscuro #containerTable div {
+  background-color: hsl(240, 16%,16%);
+  border-color: hsl(0, 0%, 50%)
+
+}
+.modo-oscuro .Costos div {
+  background-color: hsl(240, 16%,16%);
+}
+.modo-oscuro .table-hover tbody tr:hover {
+  background-color: hsl(240, 16%,12%);
+  color:hsl(29, 100%, 50%);
+}
+.modo-oscuro .col-md-8 {
+  background-color: hsl(240, 16%,22%);
+} 
+.modo-oscuro h6 {
+  opacity: 0.7  ;
+}
+.modo-oscuro .TarjetaProducto:hover {
+  background-color: hsl(240, 16%,18%);
+  border:solid 2px black;
+}
+.modo-oscuro #products-container > div {
+  background-color: hsl(240, 16%,15%)
+}
+
 
 /* */
 
@@ -1033,4 +1159,20 @@ body.modo-oscuro {
     text-align: end;
     margin-right: 20px;
   }
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+  }
+
+.input_control {
+  width: 80%;
+  margin: 0 auto;
 }
